@@ -20,16 +20,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^18.0.6",
-    "express": "^5.2.1",
-    "express-rate-limit": "^8.7.1",
-    "helmet": "^8.3.0",
-    "pg": "^8.23.1",
-    "xss": "^1.0.15",
-    "zod": "^4.6.5"
-  },
-  "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.4",
@@ -37,12 +27,22 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
-    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "pg": "^8.23.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.3",
+    "xss": "^1.0.15",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
     "vitest": "^5.0.3"
   }
 }
