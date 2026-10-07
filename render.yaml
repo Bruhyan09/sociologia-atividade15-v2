@@ -1,9 +1,3 @@
-databases:
-  - name: sociotab-db
-    plan: free
-    databaseName: sociotab
-    user: sociotab
-
 services:
   - type: web
     name: sociotab
