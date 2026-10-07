@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"SocioTab — Aula 15"},{"path":"/arquivados","title":"Tabelas arquivadas"},{"path":"/tabela/:id","title":"Editor de tabela"}]}

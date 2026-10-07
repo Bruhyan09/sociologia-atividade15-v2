@@ -1,0 +1,3 @@
+import { describe,it,expect } from 'vitest';import xss from 'xss';
+const clean=(html:string)=>xss(html,{whiteList:{b:[],strong:[],i:[],em:[],u:[],s:[],strike:[],br:[],p:[],ul:[],ol:[],li:[],span:['style'],a:['href','target','rel']}});
+describe('sanitização de célula',()=>{it('remove script executável',()=>expect(clean('<script>alert(1)</script><b>Marx</b>')).not.toContain('<script'));it('mantém texto rico permitido',()=>expect(clean('<b>classe</b>')).toContain('<b>classe</b>'));it('escapa elementos e handlers perigosos',()=>expect(clean('<img src=x onerror=alert(1)>')).not.toContain('<img'));});
