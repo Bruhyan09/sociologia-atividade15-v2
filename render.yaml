@@ -1,13 +1,14 @@
 databases:
   - name: sociotab-db
-    plan: basic-256mb
+    plan: free
     databaseName: sociotab
     user: sociotab
+
 services:
   - type: web
     name: sociotab
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm ci && npm run build
     startCommand: npm run migrate && npm start
     healthCheckPath: /api/health
